@@ -3,3 +3,55 @@
 @import "./reset"
 
 $enable-responsive-font-sizes: true
+
+$accent: #9B9BCA
+$blue-main: #696A86
+$red-header: #402B2B
+$black: #000000
+$white-main: #fff
+
+body
+    font-size: 18px
+    font-family: 'Roboto', sans-serif
+    color: $blue-main
+
+h1
+    font-size: 58px
+    font-weight: bold
+    color: $blue-main
+
+.main
+    padding: 22px 0px
+    background: url('../img/bgmain.png') no-repeat center top / 100% 100%
+
+
+.nav
+
+    &__name
+        font-size: 22px
+        margin: auto 0 auto 21px
+        color: #505050
+
+    &__link
+        margin: auto 58px auto 0
+
+    &__cta
+        width: 234px
+        height: 60px
+        background: $accent
+        border-radius: 10px
+        font-size: 18px
+        color: $white-main
+        font-weight: bold
+        margin: auto 0 auto 0
+
+.offer
+    padding: 241px 0px 112px 0px
+
+    &__title
+        max-width: 580px
+
+    &__desc
+        margin: 30px 0px
+
+
