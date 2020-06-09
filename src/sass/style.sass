@@ -74,6 +74,7 @@ h4
 
 .services
     padding: 95px 0px 192px 0px
+
     &__item
         border-radius: 5px
         height: 250px
@@ -124,6 +125,7 @@ h4
     width: 100%
     padding-bottom: 35%
     height: 0
+
     & iframe
         position: absolute
         top: 0
@@ -131,4 +133,48 @@ h4
         width: 100%
         height: 100%
 
+/* features block */
 
+.features
+    padding: 54px 0px 0px 0px
+
+    &__block
+        margin-bottom: 162px
+
+    &__title
+        margin-bottom: 12px
+
+    &__desc
+        max-width: 660px
+        margin: 0 auto
+
+    &__item
+        box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1)
+        border-radius: 10px
+        max-width: 442px
+        height: 545px
+        border: px solid grey
+
+    &__pic
+        margin: 60px 0px 53px 0px
+
+    &__text
+        max-width: 350px
+        margin: 22px auto 115px auto
+        position: relative
+        line-height: 30px
+
+    &__cta
+        position: absolute
+        width: 234px
+        height: 60px
+        background: $accent
+        border-radius: 10px
+        font-size: 18px
+        color: $white-main
+        font-weight: bold
+        top: 93%
+        left: 22%
+        transition: all 0.5s ease
+        &:hover
+            background: red
