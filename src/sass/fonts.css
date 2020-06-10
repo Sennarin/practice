@@ -40,6 +40,9 @@
         width: 100%;
         text-align: center;
     }
+    .iframe-container {
+        padding-bottom: 55%;
+    }
 }
 
 @media screen and (max-width: 992px) {
