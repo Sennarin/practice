@@ -5,14 +5,12 @@
 
 @media screen and (max-width: 375px) {
     .features__cta {
-        top: 93%;
         left: 17% !important;
     }
 }
 
 @media screen and (max-width: 414px) {
     .features__cta {
-        top: 93%;
         left: 20%;
     }
 }
