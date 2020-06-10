@@ -1,5 +1,4 @@
 @import "~bootstrap/scss/bootstrap"
-@import "./fonts"
 @import "./reset"
 
 $enable-responsive-font-sizes: true
@@ -11,9 +10,10 @@ $black: #000000
 $white-main: #fff
 
 body
-    font-size: 18px
+    +rfs(18)
     font-family: 'Poppins', sans-serif
     color: $blue-main
+    overflow-x: hidden
 
 form
     outline: none!important
@@ -21,27 +21,33 @@ form
 input
     outline: none!important
 
+a
+    transition: all 0.5s ease
+    &:hover
+        text-decoration: none
+        color: red
+
 h1
-    font-size: 58px
+    +rfs(58)
     font-weight: bold
     color: $blue-main
     font-family: 'PT Serif', serif
 
 h2
-    font-size: 48px
+    +rfs(48)
     color: $red-header
     font-family: 'PT Serif', serif
 
 h3
-    font-size: 26px
+    +rfs(26)
     font-weight: bold
 
 h4
-    font-size: 22px
+    +rfs(20)
     font-weight: bold
 
 h5
-    font-size: 20px
+    +rfs(20)
     font-weight: bold
     color: $white-main
 
@@ -60,20 +66,22 @@ h5
 .nav
 
     &__name
-        font-size: 22px
+        +rfs(22)
         margin: auto 0 auto 21px
         color: #505050
 
     &__link
         margin: auto 58px auto 0
         color: $blue-main
+        &:last-child
+            margin-right: 0px
 
     &__cta
         width: 234px
         height: 60px
         background: $accent
         border-radius: 10px
-        font-size: 18px
+        +rfs(18)
         color: $white-main
         font-weight: bold
         margin-top: 6px
@@ -85,7 +93,7 @@ h5
     padding: 241px 0px 112px 0px
 
     &__title
-        max-width: 650px
+        max-width: 645px
 
     &__desc
         margin: 30px 0px
@@ -94,6 +102,9 @@ h5
 
 .services
     padding: 95px 0px 192px 0px
+
+    &__block
+        margin-bottom: 139px
 
     &__item
         border-radius: 5px
@@ -112,14 +123,11 @@ h5
     &__title
         margin-bottom: 12px
 
-    &__block
-        margin-bottom: 139px
-
     &__header
         margin: 21px 0px 12px 0px
 
     &__description
-        font-size: 16px
+        +rfs(16)
         max-width: 220px
         margin: 0 auto
 
@@ -134,7 +142,7 @@ h5
         margin-bottom: 16px
 
     &__desc
-        font-size: 18px
+        +rfs(18)
         max-width: 450px
 
 /* VIDEO SCREEN */
@@ -146,7 +154,7 @@ h5
 .iframe-container
     position: relative
     width: 100%
-    padding-bottom: 35%
+    padding-bottom: 40%
     height: 0
 
     & iframe
@@ -174,9 +182,18 @@ h5
     &__item
         box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1)
         border-radius: 10px
-        max-width: 442px
+        width: 442px
         height: 545px
         border: px solid grey
+        position: relative
+
+    &__item2
+        box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1)
+        border-radius: 10px
+        width: 442px
+        height: 545px
+        border: px solid grey
+        position: relative
 
     &__pic
         margin: 60px 0px 53px 0px
@@ -184,7 +201,6 @@ h5
     &__text
         max-width: 350px
         margin: 22px auto 115px auto
-        position: relative
         line-height: 30px
 
     &__cta
@@ -193,11 +209,11 @@ h5
         height: 60px
         background: $accent
         border-radius: 10px
-        font-size: 18px
+        +rfs(18)
         color: $white-main
         font-weight: bold
         top: 93%
-        left: 22%
+        left: 24%
         transition: all 0.5s ease
         &:hover
             background: red
@@ -214,13 +230,14 @@ h5
         width: 708px
         height: 566px
         box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1)
+        overflow: hidden
 
     &__cta
         width: 234px
         height: 60px
         background: $accent
         border-radius: 10px
-        font-size: 18px
+        +rfs(18)
         color: $white-main
         font-weight: bold
         margin: auto 0 30px 0
@@ -228,7 +245,7 @@ h5
         &:hover
             background: red
     &__text
-        font-size: 16px
+        +rfs(16)
         margin-bottom: 10px
 
     &__input
@@ -252,7 +269,7 @@ h5
             border-radius: 5px
 
     &__sign
-        font-size: 18px
+        +rfs(18)
 
         &-red
             color: red
@@ -266,24 +283,26 @@ h5
 
     &__item
         margin-bottom: 115px
+        width: 175px
 
     &__title
         margin-bottom: 20px
 
     &__link
         color: $white-main
-        font-size: 16px
+        +rfs(16)
         margin-bottom: 10px
 
 
 .creddits
 
     &__copyright
-        font-size: 16px
+        +rfs(16)
         margin-top: 16px
+
     &__logo
         margin-right: 8px
-        margin-left: 100px
+        margin-left: 0px
     &__name
         margin: auto 0
 
@@ -297,4 +316,4 @@ h5
         &:last-child
             margin-right: 0
 
-
+@import "./fonts"

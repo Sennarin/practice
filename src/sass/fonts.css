@@ -2,3 +2,77 @@
     font-family: 'Freight';
     src: url('../fonts/FreightSansProLight-Regular.ttf');
 }
+
+@media screen and (max-width: 375px) {
+    .features__cta {
+        top: 93%;
+        left: 17%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .nav__cta{
+        display: none;
+    }
+    .join__input {
+        width: 280px;
+    }
+    .join__form-wrapper {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .nav__cta{
+        display: none;
+    }
+    .offer__title {
+        width: 100%;
+        text-align: center;
+    }
+    .offer__desc {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .support__picture{
+        margin-top: 40px;
+    }
+
+    .nav__link {
+        margin: auto 23px auto 0;
+    }
+
+    .features__item {
+        margin-bottom: 80px;
+    }
+
+    .nav__cta{
+        display: none;
+    }
+    .nav__menu {
+        margin-top: 0px;
+    }
+    .services{
+        padding: 95px 0px 95px 0px;
+    }
+    .bg {
+        height: 22%;
+    }
+    .nav__logo {
+        margin-bottom: 32px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .nav__cta{
+        display: none;
+    }
+    .creddits__social-link {
+        margin: 15px 15px 0px 0px;
+    }
+}
